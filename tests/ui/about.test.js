@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test('Check about page', async ({ page }) => {
-  await page.goto('hhttps://beloslavbelov-exam-3pxd.onrender.com/About');
+  await page.goto('https://beloslavbelov-exam-3pxd.onrender.com/About');
   const heading = await page.$('h1');
   const text = await heading.textContent();
   expect(text).toBe('About');
