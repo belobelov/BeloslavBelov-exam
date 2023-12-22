@@ -5,4 +5,3 @@ test('Check grades page', async ({ page }) => {
     const list = await page.$('ul');
     expect(list).toBeTruthy();
   });
-  
